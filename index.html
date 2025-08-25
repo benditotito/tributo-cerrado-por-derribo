@@ -8,20 +8,21 @@
   <meta property="og:title" content="Cerrado por Derribo – Tributo a Joaquín Sabina" />
   <meta property="og:description" content="Contratación y reservas para conciertos, eventos y salas." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/logo.jpg" />
+  <meta property="og:image" content="images/logo-negro.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <nav class="container nav">
       <a href="#inicio" class="logo">Cerrado por <span>Derribo</span></a>
       <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
       <ul id="navMenu" class="nav-menu">
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#musica">Música</a></li>
+        <li><a href="#setlist">Setlist</a></li>
         <li><a href="#fechas">Fechas</a></li>
         <li><a href="#galeria">Galería</a></li>
         <li><a href="#comentarios">Comentarios</a></li>
@@ -31,152 +32,153 @@
   </header>
 
   <main id="inicio">
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero">
-      <!-- Si tu archivo real tiene espacios, usa: images/panoramica%20byn.jpg -->
-      <div class="hero-bg bw" style="background-image:url('images/panoramica-byn.jpg');"></div>
+      <div class="hero-bg bw" style="background-image:url('images/panoramica-byn.jpeg');"></div>
+      <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1>Tributo a <strong>Joaquín Sabina</strong><br/>«Cerrado por Derribo»</h1>
-        <p>Un espectáculo íntimo y canalla. Canciones para cantar, brindar y recordar.</p>
-        <a href="#reservas" class="btn btn-primary">Reservar fecha</a>
+        <h1>Tributo a <strong>Joaquín Sabina</strong></h1>
+        <p class="lead">«Cerrado por Derribo» — Un espectáculo íntimo y canalla.</p>
+        <div class="hero-cta">
+          <a href="#reservas" class="btn btn-primary">Reservar fecha</a>
+          <a href="#galeria" class="btn">Ver galería</a>
+        </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section container">
-      <div class="grid-two">
-        <div>
-          <h2>Sobre el tributo</h2>
-          <p><strong>TODO: Nombre del cantante</strong> interpreta un homenaje fiel al repertorio de <em>Joaquín Sabina</em>, con especial cariño a «Cerrado por Derribo». Un formato adaptable a bares, salas y eventos privados: acústico o con banda, según el aforo y el ambiente que busques.</p>
+    <!-- Sobre -->
+    <section id="sobre" class="section">
+      <div class="container grid-two">
+        <div class="stack">
+          <h2 class="section-title">Sobre el proyecto</h2>
+          <p><strong>TODO: Nombre del cantante</strong> rinde un homenaje fiel al repertorio de <em>Joaquín Sabina</em>, con especial foco en «Cerrado por Derribo». Formato adaptable: acústico íntimo, dúo o banda completa, según el aforo y el ambiente.</p>
           <ul class="bullets">
             <li>Duración estándar: 70–90 minutos (ampliable).</li>
-            <li>Formato: Solo/duo/banda según necesidades.</li>
-            <li>Equipo: Se puede aportar sonido e iluminación básica (consultar).</li>
+            <li>Formato: Solo / Dúo / Banda.</li>
+            <li>Equipo: Posibilidad de aportar sonido e iluminación básica (consultar).</li>
           </ul>
-          <p class="note">Tributo <strong>no oficial</strong>. Todas las canciones son propiedades de sus autores y editoriales.</p>
+          <p class="note">Tributo <strong>no oficial</strong>. Los derechos pertenecen a sus autores y editoriales.</p>
+          <div class="cta-row">
+            <a class="btn" href="https://www.youtube.com/@cerradoxderribotributo" target="_blank" rel="noopener">Canal oficial en YouTube</a>
+          </div>
         </div>
-        <figure class="frame">
-          <img src="images/logo-trio.jpg" alt="Foto del tributo Cerrado por Derribo Trio" class="bw" loading="lazy"/>
+        <figure class="frame cover-figure">
+          <img src="images/logo-trio.jpg" alt="Cerrado por Derribo – Trío" class="bw" loading="lazy"/>
         </figure>
       </div>
     </section>
 
-    <!-- MUSICA -->
-    <section id="musica" class="section section-alt">
-      <div class="container">
-        <h2>Música & Setlist</h2>
-        <div class="grid-two">
-          <div>
-            <h3>Setlist aproximado</h3>
-            <ul class="setlist">
-              <li>Cerrado por Derribo</li>
-              <li>19 Días y 500 Noches</li>
-              <li>Y Nos Dieron las Diez</li>
-              <li>Contigo</li>
-              <li>Quién Me Ha Robado el Mes de Abril</li>
-              <li>Peces de Ciudad</li>
-              <li>Princesa</li>
-            </ul>
-            <p class="muted">*El repertorio puede variar según el evento.</p>
-          </div>
-          <div>
-            <div class="frame" style="padding:16px; text-align:center">
-              <p class="muted" style="margin:0 0 10px">Escucha y mira más en el canal oficial:</p>
-              <a class="btn" href="https://www.youtube.com/@cerradoxderribotributo" target="_blank" rel="noopener">@cerradoxderribotributo en YouTube</a>
-            </div>
-          </div>
+    <!-- Setlist -->
+    <section id="setlist" class="section section-alt">
+      <div class="container grid-two">
+        <div class="stack">
+          <h2 class="section-title">Setlist aproximado</h2>
+          <ol class="setlist">
+            <li>Cerrado por Derribo</li>
+            <li>19 Días y 500 Noches</li>
+            <li>Y Nos Dieron las Diez</li>
+            <li>Contigo</li>
+            <li>Quién Me Ha Robado el Mes de Abril</li>
+            <li>Peces de Ciudad</li>
+            <li>Princesa</li>
+          </ol>
+          <p class="muted">*El repertorio puede variar en función del evento.</p>
+        </div>
+        <div class="video frame">
+          <!-- Sustituye por vídeo/playlist si quieres incrustar -->
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID" title="Cerrado por Derribo – Playlist" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </section>
 
-    <!-- FECHAS -->
-    <section id="fechas" class="section container">
-      <h2>Próximas fechas</h2>
-      <div class="dates">
-        <article class="date-item">
-          <h3>TODO: Ciudad / Sala</h3>
-          <p><time datetime="2025-10-03">3 de octubre, 2025</time> – 22:30</p>
-          <a href="#reservas" class="link">Reservar / Info</a>
-        </article>
-        <article class="date-item">
-          <h3>TODO: Ciudad / Evento privado</h3>
-          <p><time datetime="2025-11-15">15 de noviembre, 2025</time> – 21:00</p>
-          <a href="#reservas" class="link">Reservar / Info</a>
-        </article>
+    <!-- Fechas -->
+    <section id="fechas" class="section">
+      <div class="container">
+        <h2 class="section-title">Próximas fechas</h2>
+        <div class="dates">
+          <article class="date-item">
+            <div class="date-meta"><time datetime="2025-10-03">03·10·2025</time> — 22:30</div>
+            <h3 class="date-title">TODO: Ciudad / Sala</h3>
+            <a href="#reservas" class="link">Reservar / Info</a>
+          </article>
+          <article class="date-item">
+            <div class="date-meta"><time datetime="2025-11-15">15·11·2025</time> — 21:00</div>
+            <h3 class="date-title">TODO: Ciudad / Evento privado</h3>
+            <a href="#reservas" class="link">Reservar / Info</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- GALERIA -->
+    <!-- Galería (uniforme) -->
     <section id="galeria" class="section section-alt">
       <div class="container">
-        <h2>Galería</h2>
-        <div class="gallery">
-          <img src="images/papa-caballo.jpg" alt="Escena 1" class="bw" loading="lazy"/>
-          <img src="images/papa-enamorao.jpg" alt="Escena 2" class="bw" loading="lazy"/>
-          <img src="images/papa-falando.jpg" alt="Escena 3" class="bw" loading="lazy"/>
-          <img src="images/papa-felis.jpg" alt="Escena 4" class="bw" loading="lazy"/>
-          <img src="images/papa-coro.jpg" alt="Escena 5" class="bw" loading="lazy"/>
-          <img src="images/papa-todos.jpg" alt="Escena 6" class="bw" loading="lazy"/>
-          <img src="images/panoramica-byn.jpg" alt="Escena 7" class="bw" loading="lazy"/>
+        <h2 class="section-title">Galería</h2>
+        <div class="gallery gallery-uniform">
+          <figure class="gallery-item frame"><img src="images/papa-a-caballo.jpg" alt="Actuación 1" class="bw" loading="lazy"></figure>
+          <figure class="gallery-item frame"><img src="images/papa-enamorao.jpg" alt="Actuación 2" class="bw" loading="lazy"></figure>
+          <figure class="gallery-item frame"><img src="images/papa-falando.jpg" alt="Actuación 3" class="bw" loading="lazy"></figure>
+          <figure class="gallery-item frame"><img src="images/papa-felis.jpg" alt="Actuación 4" class="bw" loading="lazy"></figure>
+          <figure class="gallery-item frame"><img src="images/papa-y-coro.jpg" alt="Actuación 5" class="bw" loading="lazy"></figure>
+          <figure class="gallery-item frame"><img src="images/papa-y-todos.jpg" alt="Actuación 6" class="bw" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <!-- COMENTARIOS -->
-    <section id="comentarios" class="section container">
-      <h2>Comentarios</h2>
-      <p class="muted">Comparte impresiones del show, sugerencias de canciones, etc.</p>
-      <!-- Sustituye este script por el que te genera utteranc.es con tu usuario/repositorio -->
-      <div class="comments-frame frame">
-        <script src="https://utteranc.es/client.js"
-          repo="TUUSUARIO/tributo-cerrado-por-derribo"
-          issue-term="pathname"
-          theme="github-dark"
-          crossorigin="anonymous"
-          async>
-        </script>
+    <!-- Comentarios -->
+    <section id="comentarios" class="section">
+      <div class="container">
+        <h2 class="section-title">Comentarios</h2>
+        <p class="muted">Comparte impresiones del show, sugerencias de canciones, etc.</p>
+        <div class="comments-frame frame">
+          <script src="https://utteranc.es/client.js"
+            repo="benditotito/tributo-cerrado-por-derribo"
+            issue-term="pathname"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async>
+          </script>
+        </div>
       </div>
     </section>
 
-    <!-- RESERVAS -->
+    <!-- Reservas (card profesional) -->
     <section id="reservas" class="section section-accent">
       <div class="container narrow">
-        <h2>Reservas</h2>
-        <p>Cuéntanos fecha, ciudad, aforo y tipo de evento. Te respondemos por email.</p>
-
-        <!-- Versión MAILTO (sin backend). El envío lo gestiona script.js -->
-        <form id="bookingForm" class="form" action="#" method="POST" novalidate>
-          <div class="form-grid">
+        <h2 class="section-title">Reservas</h2>
+        <div class="card">
+          <p class="muted">Cuéntanos fecha, ciudad, aforo y tipo de evento. Te respondemos por email.</p>
+          <form id="bookingForm" class="form" action="#" method="POST" novalidate>
+            <div class="form-grid">
+              <label>
+                <span>Nombre y apellidos *</span>
+                <input type="text" name="nombre" required>
+              </label>
+              <label>
+                <span>Email *</span>
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                <span>Fecha del evento *</span>
+                <input type="date" name="fecha" required>
+              </label>
+              <label>
+                <span>Ciudad / Sala *</span>
+                <input type="text" name="ciudad" required>
+              </label>
+            </div>
             <label>
-              <span>Nombre y apellidos *</span>
-              <input type="text" name="nombre" required>
+              <span>Mensaje</span>
+              <textarea name="mensaje" rows="5" placeholder="Aforo, equipo disponible, horario, presupuesto orientativo…"></textarea>
             </label>
-            <label>
-              <span>Email *</span>
-              <input type="email" name="email" required>
-            </label>
-            <label>
-              <span>Fecha del evento *</span>
-              <input type="date" name="fecha" required>
-            </label>
-            <label>
-              <span>Ciudad / Sala *</span>
-              <input type="text" name="ciudad" required>
-            </label>
-          </div>
-          <label>
-            <span>Mensaje</span>
-            <textarea name="mensaje" rows="5" placeholder="Aforo, equipo disponible, horario, presupuesto orientativo…"></textarea>
-          </label>
-
-          <input type="hidden" name="_subject" value="Reserva: Tributo Cerrado por Derribo" />
-          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <button type="submit" class="btn btn-primary">Enviar solicitud</button>
-          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-        </form>
-
-        <p class="muted tiny">Al enviar aceptas que contactemos por email. No compartimos tus datos con terceros.</p>
+            <input type="hidden" name="_subject" value="Reserva: Tributo Cerrado por Derribo" />
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="actions">
+              <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+              <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -184,7 +186,7 @@
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="year"></span> Tributo «Cerrado por Derribo». No oficial.</p>
-      <p class="tiny">Web hecha con cariño en blanco y negro. <a href="#reservas">Contratación</a></p>
+      <p class="tiny">Diseño en blanco y negro. <a href="#reservas">Contratación</a></p>
     </div>
   </footer>
 
