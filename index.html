@@ -84,12 +84,16 @@
           </ol>
           <p class="muted">*El repertorio puede variar en función del evento.</p>
         </div>
-        <div class="video frame">
-          <!-- Sustituye por vídeo/playlist si quieres incrustar -->
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID" title="Cerrado por Derribo – Playlist" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
+       <!-- Vídeo local (offline) -->
+<div class="video frame">
+  <video controls poster="images/logo-trio.jpg">
+    <source src="videos/video.webm" type="video/webm">   <!-- opcional -->
+    <source src="videos/video.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento <code>video</code>.
+  </video>
+    </div>
+  </div>
+</section>  
 
     <!-- Fechas -->
     <section id="fechas" class="section">
