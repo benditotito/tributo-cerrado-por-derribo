@@ -69,6 +69,23 @@ img{max-width:100%;display:block}
 @media(min-width:800px){.gallery-uniform{grid-template-columns:repeat(3,1fr)}}
 .gallery-item{aspect-ratio:4/3}
 .gallery-item img{width:100%;height:100%;object-fit:cover}
+/* Estilo para vídeo local encuadrado */
+.video{
+  aspect-ratio:16/9;           /* siempre relación 16:9 */
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:#000;
+  box-shadow:var(--shadow);    /* igual que las cards */
+}
+
+.video video{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;            /* rellena el cuadro, recorta si sobra */
+}
+
 
 /* Comments frame */
 .comments-frame{padding:8px}
